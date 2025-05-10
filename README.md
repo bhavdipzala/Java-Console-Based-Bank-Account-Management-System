@@ -1,81 +1,68 @@
-Here’s a **refined and professional README** for your Bank Account Management System project, incorporating all the latest features you’ve implemented (password protection and transaction history), with a clear structure and concise tone.
+# Bank Account Management System
+
+This is a console-based Java application designed to simulate the core functionality of a simple banking system. It enables users to securely manage bank accounts, perform transactions, and view account history. The project emphasises modular design, secure access, and object-oriented principles.
 
 ---
 
-## 💼 Bank Account Management System
+## Features
 
-A **console-based Java application** that simulates core banking operations. Users can create accounts, deposit or withdraw funds, check balances, and view account details—all securely protected by password authentication. The system also tracks and displays a detailed transaction history for each account.
+* **Account Creation**
 
----
+  * Unique account number and password setup
+  * Name validation (letters and spaces only)
+  * Minimum initial deposit requirement (₹500)
 
-### 🚀 Features
+* **Secure Authentication**
 
-✅ **Create Bank Account**
+  * Password-protected access for sensitive actions (withdrawals, balance checks, details, and history)
 
-* Requires unique account number and user-defined password
-* Minimum initial deposit: ₹500
-* Name validation (letters and spaces only)
+* **Transactions**
 
-✅ **Secure Transactions**
+  * Deposit and withdraw funds with appropriate validation
+  * Real-time balance updates
 
-* Password required for sensitive operations like withdrawal, balance check, account detail view, and history
-* Prevents unauthorized access
+* **Account Overview**
 
-✅ **Deposit and Withdrawal**
+  * Display current balance and account details
+  * View full transaction history with timestamps
 
-* Add or withdraw money from existing accounts
-* Validations ensure balance does not fall below zero
+* **Robust Input Validation**
 
-✅ **Account Balance Check**
-
-* Displays current account balance (password protected)
-
-✅ **Display Account Details**
-
-* Shows name, account number, and balance (password protected)
-
-✅ **Transaction History**
-
-* Logs all activities: deposits, withdrawals, and account creation
-* Displays full history for user reference (password protected)
-
-✅ **Robust Input Validation**
-
-* Prevents invalid names, duplicate account numbers, and improper data entries
-* Graceful error handling for incorrect inputs
+  * Handles invalid input gracefully
+  * Prevents duplicate account numbers and unauthorised access
 
 ---
 
-### 🛠️ Technologies Used
+## Technologies Used
 
-* **Language:** Java
-* **Development:** Console-based (command-line interface)
-* **Concepts:** Object-Oriented Programming (OOP), Exception Handling, Input Validation
+* **Language**: Java
+* **Development**: Console-based (command-line interface)
+* **Concepts**: Object-Oriented Programming (OOP), Exception Handling, Input Validation
+* **Data Structures**: `ArrayList` for dynamic account and transaction storage
 
 ---
 
-### 📁 Project Structure
+## File Structure
 
 ```
 BankAccountManagementSystem/
-│
-├── Main.java            // Program entry point
-├── Bank.java            // Core bank operations logic
-├── BankAccount.java     // Account structure and data handling
-└── README.md            // Project overview and instructions
+├── Main.java           // Application entry point and menu navigation
+├── Bank.java           // Core banking logic and operations
+├── BankAccount.java    // Account data structure and methods
+└── README.md           // Project documentation
 ```
 
 ---
 
-### 🧪 How to Run
+## How to Run
 
-1. Clone or download the project folder.
-2. Compile the code:
+1. **Download or clone** the repository.
+2. **Compile the Java files**:
 
    ```bash
    javac Main.java Bank.java BankAccount.java
    ```
-3. Run the application:
+4. **Run the application**:
 
    ```bash
    java Main
@@ -83,51 +70,40 @@ BankAccountManagementSystem/
 
 ---
 
-### 📸 Sample User Flow
+## Sample User Flow
 
 ```text
-------------- Bank Account Management System ----------------
+--- Bank Account Management System ---
 1. Create a New Bank Account
 2. Deposit Money
 3. Withdraw Money
 4. View Account Balance
-5. Display Full Account Details
+5. Display Account Details
 6. View Transaction History
 7. Exit
 Enter a choice: 1
 
-Enter your name: Rahul
-Enter a Unique Account Number: 1001
-Set a password: mypass123
-Enter Initial Deposit (Min ₹500): 1500
-✅ Account created successfully!
+Enter your name: TestUser
+Enter a Unique Account Number: 202301
+Set a password: pass123
+Enter Initial Deposit (Min ₹500): 2000
+✅ Account created successfully.
 ```
 
 ---
 
-### 🔒 Security Notes
+## Security Notes
 
-* All sensitive actions (withdrawal, balance check, detail view, transaction history) are **password-protected**.
-* Passwords are stored in plaintext for simplicity, but in a real-world system, passwords should be securely hashed and encrypted.
-
+* All sensitive actions (withdrawal, balance check, detail view, transaction history) are password-protected.
+* Passwords are stored in plaintext for simplicity and learning purposes, but passwords are securely hashed and encrypted in real-world systems.
 ---
 
-### 📌 Possible Future Improvements
+## Potential Enhancements
 
-* Encrypt password storage
-* Add interest calculation
-* Export transaction logs to file
-* GUI or Web UI with JavaFX or Spring Boot
+* Password encryption and secure credential management
 * Integration with database (e.g., MySQL or SQLite)
+* Export transaction logs to files (CSV or PDF)
+* GUI integration with JavaFX or web-based interface
+* Interest and fee logic
 
 ---
-
-### 👨‍💻 Author
-
-**Your Name**
-Master’s Student – \[Your Program Name]
-This project is part of an academic assignment.
-
----
-
-Let me know if you want the file formatted for GitHub with Markdown styling or need a `.md` file generated.
