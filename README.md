@@ -1,6 +1,4 @@
 
-
-```markdown
 # Bank Account Management System
 
 This is a console-based Java application designed to simulate the core functionality of a simple banking system. It enables users to manage bank accounts, perform secure transactions, and access account details. The project emphasizes modular design and object-oriented principles.
