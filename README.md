@@ -26,7 +26,7 @@ This is a console-based Java application designed to simulate the core functiona
   * Display current balance and account details
   * View full transaction history with timestamps
 
-* **Robust Input Validation**
+* **Input Validation**
 
   * Handles invalid input gracefully
   * Prevents duplicate account numbers and unauthorised access
@@ -105,5 +105,3 @@ Enter Initial Deposit (Min ₹500): 2000
 * Export transaction logs to files (CSV or PDF)
 * GUI integration with JavaFX or web-based interface
 * Interest and fee logic
-
----
