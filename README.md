@@ -40,17 +40,6 @@ This is a console-based Java application designed to simulate the core functiona
 * **Concepts**: Object-Oriented Programming (OOP), Exception Handling, Input Validation
 * **Data Structures**: `ArrayList` for dynamic account and transaction storage
 
----
-
-## File Structure
-
-```
-BankAccountManagementSystem/
-├── Main.java           // Application entry point and menu navigation
-├── Bank.java           // Core banking logic and operations
-├── BankAccount.java    // Account data structure and methods
-└── README.md           // Project documentation
-```
 
 ---
 
@@ -105,3 +94,14 @@ Enter Initial Deposit (Min ₹500): 2000
 * Export transaction logs to files (CSV or PDF)
 * GUI integration with JavaFX or web-based interface
 * Interest and fee logic
+
+---
+
+
+## File Structure
+
+BankAccountManagementSystem/
+├── Main.java           // Application entry point and menu navigation
+├── Bank.java           // Core banking logic and operations
+├── BankAccount.java    // Account data structure and methods
+└── README.md           // Project documentation
