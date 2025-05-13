@@ -100,8 +100,10 @@ Enter Initial Deposit (Min ₹500): 2000
 
 ## File Structure
 
+```
 BankAccountManagementSystem/
 ├── Main.java           // Application entry point and menu navigation
 ├── Bank.java           // Core banking logic and operations
 ├── BankAccount.java    // Account data structure and methods
 └── README.md           // Project documentation
+```
